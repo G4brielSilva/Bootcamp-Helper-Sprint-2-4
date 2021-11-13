@@ -1,14 +1,6 @@
 "use strict";
 /*a) Após a leitura, crie uma Factory que, a partir da lista do exercício 6, dado um array, devolva o nome e a bio da pessoa.
 b)Crie um código que responda quem criou a linguagem de programação Ada, essa resposta precisa estar como propriedade do objeto da pessoa relacionada */
-class InfoPerson {
-    constructor(rId, rName, rBio, radasCreator) {
-        this.id = rId;
-        this.name = rName;
-        this.bio = rBio;
-        this.adasCreator = radasCreator;
-    }
-}
 class Person {
     constructor(rId, rName, rBio, radasCreator) {
         this.id = rId;
@@ -23,7 +15,7 @@ class Person {
         return this.name;
     }
     getInfo() {
-        console.log(`\nName: ${this.getName()}, Bio ${this.getBio()}\n`);
+        console.log(`\nName: ${this.getName()}, Bio: ${this.getBio()}\n`);
         if (this.adasCreator)
             console.log(`${this.getName()} Criou a linguagem ada`);
     }
